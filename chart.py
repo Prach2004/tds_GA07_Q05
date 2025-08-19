@@ -27,7 +27,7 @@ for segment in segments:
 df = pd.DataFrame(data)
 
 # Create the boxplot
-plt.figure(figsize=(8, 8)) # Set figure size for 512x512 pixel output [cite: 1024]
+plt.figure(figsize=(8, 8))
 sns.boxplot(x="Segment", y="Purchase_Amount", data=df, palette="viridis")
 
 # Add titles and labels
@@ -36,4 +36,4 @@ plt.xlabel("Customer Segment")
 plt.ylabel("Purchase Amount ($)")
 
 # Save the chart as a PNG file with exact 512x512 pixel dimensions
-plt.savefig('chart.png', dpi=64, bbox_inches='tight') [cite: 1026]
+plt.savefig('chart.png', dpi=64, bbox_inches='tight')
